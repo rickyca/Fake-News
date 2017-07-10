@@ -30,7 +30,7 @@ def dict_maker(news, wanted_keys):
 
 def parse():
 
-    raw_data = read_raw_data('raw_data_3.p')
+    raw_data = read_raw_data('raw_data_4.p')
 
     original_wanted_keys = [u'uuid', u'ord_in_thread', u'author', u'published', u'title', u'text',
                             u'language', u'crawled', u'site_url', u'country', u'domain_rank',

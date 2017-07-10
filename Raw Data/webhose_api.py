@@ -2,7 +2,7 @@ import webhoseio
 
 def get_raw_data_api():
     # Personal API Key
-    API_key = #Personal Key
+    API_key = "9ce0313a-7f23-4ef9-8dcd-a5fa2140682b"
 
     # Config API Key
     webhoseio.config(token=API_key)
