@@ -1,0 +1,4 @@
+params = {
+    'kneighborsclassifier__n_neighbors': range(3,50),
+    'kneighborsclassifier__weights': ['uniform', 'distance']
+    }

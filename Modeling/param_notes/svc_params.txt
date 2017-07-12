@@ -1,0 +1,5 @@
+params = {
+    'svc__C': range(1,30),
+    'svc__kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
+    'svc__class_weight': [None, 'balanced']
+    }

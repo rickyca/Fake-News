@@ -1,0 +1,6 @@
+params = {
+    'mlpclassifier__hidden_layer_sizes': [(i,) for i in range(5,300)],
+    'mlpclassifier__activation': ['identity', 'logistic', 'tanh', 'relu'],
+    'mlpclassifier__alpha': np.arange(0.0001, 0.01, 0.0003),
+    'mlpclassifier__learning_rate': ['constant', 'invscaling', 'adaptive']
+    }

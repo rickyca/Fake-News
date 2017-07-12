@@ -1,0 +1,5 @@
+params = {
+    'randomforestclassifier__max_features': [None, 'auto', 'log2']
+    'randomforestclassifier__n_estimators': range(5,100),
+    'randomforestclassifier__class_weight': [None, 'balanced']
+    }

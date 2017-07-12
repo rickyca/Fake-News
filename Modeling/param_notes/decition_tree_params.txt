@@ -1,0 +1,5 @@
+params = {
+    'decisiontreeclassifier__max_features': np.arange(0.3,0.8,0.1)
+    'decisiontreeclassifier__min_samples_split': range(2,10),
+    'decisiontreeclassifier__class_weight': [None, 'balanced']
+    }

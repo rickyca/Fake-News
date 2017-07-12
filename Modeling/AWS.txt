@@ -1,0 +1,28 @@
+sudo ssh -i ~/.ssh/Ricky-Temp.pem ubuntu@ec2-13-58-176-98.us-east-2.compute.amazonaws.com
+ssh -i ~/.ssh/Ricky-Temp.pem ec2-user@13.58.195.148
+
+
+scp -i ~/.ssh/Ricky-Temp.pem run_all.sh ubuntu@ec2-13-58-176-98.us-east-2.compute.amazonaws.com:~/data/
+
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
+
+http://angus.readthedocs.io/en/2014/amazon/transfer-files-between-instance.html
+
+
+excecute in the background:
+./my-shell-script.sh &
+disown -h
+
+ps aux | less
+
+
+
+info to install python packages:
+#!/bin/bash
+sudo yum install update
+sudo yum groupinstall "Development Tools"
+sudo yum install python-devel libpng-devel freetype-devel 
+#the last two are necessary for pip to run without failing with error 'Command "python setup.py egg_info" failed with error code 1'
+sudo pip install matplotlib pandas #Finally it works!
+
+https://blog.datapolitan.com/2015/08/25/installing-matplotlib-and-pandas-on-amazon-ec2/

@@ -1,0 +1,4 @@
+baseline,score,steps,details,predicted_fake__fake,predicted_real__fake,predicted_fake__real,predicted_real__real
+0.735390842398,0.819883632684,countvectorizer -> kneighborsclassifier,"countvectorizer -> binary=False lowercase=True stop_words=english decode_error=strict vocabulary=None tokenizer=None encoding=utf-8 dtype=<type 'numpy.int64'> analyzer=word ngram_range=(1, 1) max_df=1.0 min_df=1 max_features=None input=content strip_accents=None token_pattern=(?u)\b\w\w+\b preprocessor=None
+kneighborsclassifier -> n_neighbors=3 n_jobs=1 algorithm=auto metric=minkowski metric_params=None p=2 weights=distance leaf_size=30
+",2717,190,522,524

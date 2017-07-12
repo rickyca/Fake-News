@@ -1,0 +1,4 @@
+baseline,score,steps,details,predicted_fake__fake,predicted_real__fake,predicted_fake__real,predicted_real__real
+0.73210220086,0.948393625095,countvectorizer -> logisticregression,"countvectorizer -> binary=False lowercase=True stop_words=None decode_error=strict vocabulary=None tokenizer=None encoding=utf-8 dtype=<type 'numpy.int64'> analyzer=word ngram_range=(1, 1) max_df=1.0 min_df=1 max_features=None input=content strip_accents=None token_pattern=(?u)\b\w\w+\b preprocessor=None
+logisticregression -> warm_start=False C=1 n_jobs=1 verbose=0 intercept_scaling=1 fit_intercept=True max_iter=1000 penalty=l2 multi_class=ovr random_state=None dual=False tol=0.0001 solver=liblinear class_weight=balanced
+",2779,115,89,970

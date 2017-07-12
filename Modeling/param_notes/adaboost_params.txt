@@ -1,0 +1,3 @@
+'adaboostclassifier__base_estimator': [DecisionTreeClassifier(), LogisticRegression(), KNeighborsClassifier(), SVC(), MLPClassifier()],
+'adaboostclassifier__n_estimators': range(5,200),
+'adaboostclassifier__learning_rate': np.arange(0.6,1.0,0.1) ,

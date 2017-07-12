@@ -1,0 +1,22 @@
+#### Vectorizers ####
+CountVectorizer
+HashingVectorizer
+TfidfTransformer or TfidfVectorizer
+
+#### Dimension reduction ####
+PCA
+feature_selection.GenericUnivariateSelect
+SelectFromModel(LinearSVC(penalty="l1"))
+
+#### Classification ####
+Classification tree
+Logistic Regression
+KNneighbors Classifier
+SCV
+MLPClassifier
+
+#### Ensemble ####
+BaggingClassifier / Random Forest
+AdaBoostClassifier
+VotingClassifier
+GradientBoostingClassifier

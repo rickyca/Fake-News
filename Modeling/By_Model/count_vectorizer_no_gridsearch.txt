@@ -1,0 +1,240 @@
+=================================================================
+Scores
+=================================================================
+
+=================================================================
+
+Pipeline
+
+countvectorizer :
+CountVectorizer(analyzer=u'word', binary=False, decode_error=u'strict',
+        dtype=<type 'numpy.int64'>, encoding=u'utf-8', input=u'content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words=None,
+        strip_accents=None, token_pattern=u'(?u)\\b\\w\\w+\\b',
+        tokenizer=None, vocabulary=None)
+decisiontreeclassifier :
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')
+
+Score:  0.900802139037
+Baseline:  0.839037433155 {'normal': 602, 'bs': 3138} 
+
+      Predicted BS  Predicted Real
+BS            2975             163
+Real           208             394
+
+             precision    recall  f1-score   support
+
+         bs       0.93      0.95      0.94      3138
+     normal       0.71      0.65      0.68       602
+
+avg / total       0.90      0.90      0.90      3740
+
+=================================================================
+
+=================================================================
+
+Pipeline
+
+countvectorizer :
+CountVectorizer(analyzer=u'word', binary=False, decode_error=u'strict',
+        dtype=<type 'numpy.int64'>, encoding=u'utf-8', input=u'content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words=None,
+        strip_accents=None, token_pattern=u'(?u)\\b\\w\\w+\\b',
+        tokenizer=None, vocabulary=None)
+logisticregression :
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)
+
+Score:  0.920320855615
+Baseline:  0.833689839572 {'normal': 622, 'bs': 3118} 
+
+      Predicted BS  Predicted Real
+BS            2952             166
+Real           132             490
+
+             precision    recall  f1-score   support
+
+         bs       0.96      0.95      0.95      3118
+     normal       0.75      0.79      0.77       622
+
+avg / total       0.92      0.92      0.92      3740
+
+=================================================================
+
+
+=================================================================
+
+Pipeline
+
+countvectorizer :
+CountVectorizer(analyzer=u'word', binary=False, decode_error=u'strict',
+        dtype=<type 'numpy.int64'>, encoding=u'utf-8', input=u'content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words=None,
+        strip_accents=None, token_pattern=u'(?u)\\b\\w\\w+\\b',
+        tokenizer=None, vocabulary=None)
+randomforestclassifier :
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features='auto', max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            n_estimators=10, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0, warm_start=False)
+
+Score:  0.898395721925
+Baseline:  0.83449197861 {0: 3121, 1: 619} 
+
+      Predicted BS  Predicted Real
+BS            3005             116
+Real           264             355
+
+             precision    recall  f1-score   support
+
+          0       0.92      0.96      0.94      3121
+          1       0.75      0.57      0.65       619
+
+avg / total       0.89      0.90      0.89      3740
+
+=================================================================
+
+=================================================================
+
+Pipeline
+
+countvectorizer :
+CountVectorizer(analyzer=u'word', binary=False, decode_error=u'strict',
+        dtype=<type 'numpy.int64'>, encoding=u'utf-8', input=u'content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words=None,
+        strip_accents=None, token_pattern=u'(?u)\\b\\w\\w+\\b',
+        tokenizer=None, vocabulary=None)
+kneighborsclassifier :
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')
+
+Score:  0.805080213904
+Baseline:  0.827540106952 {'normal': 645, 'bs': 3095} 
+
+      Predicted BS  Predicted Real
+BS            2775             320
+Real           409             236
+
+             precision    recall  f1-score   support
+
+         bs       0.87      0.90      0.88      3095
+     normal       0.42      0.37      0.39       645
+
+avg / total       0.79      0.81      0.80      3740
+
+=================================================================
+
+=================================================================
+
+Pipeline
+
+countvectorizer :
+CountVectorizer(analyzer=u'word', binary=False, decode_error=u'strict',
+        dtype=<type 'numpy.int64'>, encoding=u'utf-8', input=u'content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words=None,
+        strip_accents=None, token_pattern=u'(?u)\\b\\w\\w+\\b',
+        tokenizer=None, vocabulary=None)
+svc :
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+
+Score:  0.83128342246
+Baseline:  0.83128342246 {'normal': 631, 'bs': 3109} 
+
+      Predicted BS  Predicted Real
+BS            3109               0
+Real           631               0
+
+             precision    recall  f1-score   support
+
+         bs       0.83      1.00      0.91      3109
+     normal       0.00      0.00      0.00       631
+
+avg / total       0.69      0.83      0.75      3740
+
+=================================================================
+
+=================================================================
+
+Pipeline
+
+countvectorizer :
+CountVectorizer(analyzer=u'word', binary=False, decode_error=u'strict',
+        dtype=<type 'numpy.int64'>, encoding=u'utf-8', input=u'content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words=None,
+        strip_accents=None, token_pattern=u'(?u)\\b\\w\\w+\\b',
+        tokenizer=None, vocabulary=None)
+mlpclassifier :
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(100,), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='adam', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False)
+
+Score:  0.921122994652
+Baseline:  0.829946524064 {'normal': 636, 'bs': 3104} 
+
+      Predicted BS  Predicted Real
+BS            2982             122
+Real           173             463
+
+             precision    recall  f1-score   support
+
+         bs       0.95      0.96      0.95      3104
+     normal       0.79      0.73      0.76       636
+
+avg / total       0.92      0.92      0.92      3740
+
+=================================================================
+
+=================================================================
+
+Pipeline
+
+countvectorizer :
+CountVectorizer(analyzer=u'word', binary=False, decode_error=u'strict',
+        dtype=<type 'numpy.int64'>, encoding=u'utf-8', input=u'content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), preprocessor=None, stop_words=None,
+        strip_accents=None, token_pattern=u'(?u)\\b\\w\\w+\\b',
+        tokenizer=None, vocabulary=None)
+perceptron :
+Perceptron(alpha=0.0001, class_weight=None, eta0=1.0, fit_intercept=True,
+      n_iter=5, n_jobs=1, penalty=None, random_state=0, shuffle=True,
+      verbose=0, warm_start=False)
+
+Score:  0.874331550802
+Baseline:  0.827807486631 {'normal': 644, 'bs': 3096} 
+
+      Predicted BS  Predicted Real
+BS            2755             341
+Real           129             515
+
+             precision    recall  f1-score   support
+
+         bs       0.96      0.89      0.92      3096
+     normal       0.60      0.80      0.69       644
+
+avg / total       0.89      0.87      0.88      3740
+
+=================================================================
+

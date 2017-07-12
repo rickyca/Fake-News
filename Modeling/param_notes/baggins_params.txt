@@ -1,0 +1,3 @@
+'baggingclassifier__base_estimator': [LogisticRegression(), KNeighborsClassifier(), SVC(), MLPClassifier()],
+  'baggingclassifier__n_estimators': range(3,100),
+  'baggingclassifier__max_features': np.arange(0.6,1.0,0.1) ,
