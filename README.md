@@ -1,8 +1,8 @@
 ## Fake-News
 News detector
 
-![alt text](https://raw.githubusercontent.com/rickyca/Fake-News/blob/master/images/tfidf_fake_12gram.png)
-![alt text](https://raw.githubusercontent.com/rickyca/Fake-News/blob/master/images/tfidf_real_12.png)
+![alt text](https://raw.github.com/rickyca/Fake-News/blob/master/images/tfidf_fake_12gram.png)
+![alt text](https://raw.github.com/rickyca/Fake-News/blob/master/images/tfidf_real_12.png)
 
 # Motivation 
 
@@ -20,17 +20,18 @@ To obtain real news a few ‘trusted’ websites were selected. This was based o
 
 Data in this report are drawn from the first wave of the panel, conducted March 19-April 29, 2014 among 2,901 web respondents[...]”
 
-# File organization
+# Repository organization
 
-This repo is set up in a way where each folder is one part of the project. 
+Each forlder consists on a different part of the project.
 
-Raw Data: Has the original dataset from kaggle.com and the code that was used to pull 'real' news. This code was run on a Raspberry Pi, and pulled data for about a month.
-Parsing: Parses the raw data in order to create a .csv file with the same information as the fake news dataset.
-EDA: Some exploratory analisys was performed in order to see what words or group or words are commonly used by the two news categories.
-Modeling: Modeling was performed on Amazon Web Services (AWS). run_all.py was excecuted on an EC2 instance.
-          Final_parse.ipynb joins the two datasets. 
-          model.py splits data into train/test, performs a gridsearch on the train data, using 3 folds. It test the model on the test data and saves the result in a .csv file.
-          options.py has the modeling options. Combinations of sklearn modeling objects and combination of parameters for the gridsearch
-          run_all.py runs all possible combination for the models and logs their success or failure.
+ - Raw Data: Contains the original dataset from kaggle.com and the code used to pull 'real' news. This code was run on a Raspberry Pi, and pulled data periodically, every 5 hours, for over one month.
+ - Parsing: Parses the raw data into a .csv file matching the information on the fake news dataset.
+ - EDA: Some exploratory analisys was performed in order to understand what words or group or words are commonly used by the two news categories.
+ - Modeling: Modeling was performed on Amazon Web Services (AWS). run_all.py was excecuted on an EC2 instance.
+          -- final_parse.ipynb joins the two datasets. 
+          -- model.py splits data into train/test, performs a gridsearch on the train data, using 3 folds. It test the model on the test data and saves the result in a .csv file.
+          -- options.py has the modeling options. Combinations of sklearn modeling objects and combination of parameters for the gridsearch
+          -- run_all.py runs all possible combination for the models and logs their success or failure.
 
-![alt text](https://raw.githubusercontent.com/rickyca/Fake-News/blob/master/images/model.png)
+Next image shows the posible combinations for the modeling
+![alt text](https://raw.github.com/rickyca/Fake-News/blob/master/images/model.png)
