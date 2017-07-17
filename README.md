@@ -1,8 +1,8 @@
 ## Fake-News
 News detector
 
-![alt text](https://raw.github.com/rickyca/Fake-News/blob/master/images/tfidf_fake_12gram.png)
-![alt text](https://raw.github.com/rickyca/Fake-News/blob/master/images/tfidf_real_12.png)
+![alt text](https://raw.github.com/rickyca/Fake-News/master/images/tfidf_fake_12gram.png)
+![alt text](https://raw.github.com/rickyca/Fake-News/master/images/tfidf_real_12.png)
 
 # Motivation 
 
@@ -34,4 +34,4 @@ Each forlder consists on a different part of the project.
           -- run_all.py runs all possible combination for the models and logs their success or failure.
 
 Next image shows the posible combinations for the modeling
-![alt text](https://raw.github.com/rickyca/Fake-News/blob/master/images/model.png)
+![alt text](https://raw.github.com/rickyca/Fake-News/master/images/model.png)
