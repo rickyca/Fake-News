@@ -18,6 +18,10 @@ To obtain real news a few ‘trusted’ websites were selected. This was based o
 
 Data in this report are drawn from the first wave of the panel, conducted March 19-April 29, 2014 among 2,901 web respondents[...]”
 
+![alt text](https://raw.github.com/rickyca/Fake-News/master/images/trust levels.png)
+
+Based on this study, the top seven ‘trusted’ sources by all ideological groups were selected: economist.com, bbc.com, npr.org, pbs.org, wsj.com, cbsnews.com, and nbcnews.com. Using a Raspberry PI, small single-board computer, news were pulled periodically every five hours for one month. This set of news was also obtained through the Webhose.io API, in order to keep the same source of information.
+
 # Repository organization
 
 Each folder consists on a different part of the project.
@@ -32,4 +36,12 @@ Each folder consists on a different part of the project.
    - run_all.py runs all possible combination for the models and logs their success or failure.
 
 Next image shows possible combinations for modeling
+
 ![alt text](https://raw.github.com/rickyca/Fake-News/master/images/model.png)
+
+# Results
+
+For now, the best result was obtained by a Neural Network: MultiLayer Perceptron. Some model combinations are still being train and tested on AWS
+
+![alt text](https://raw.github.com/rickyca/Fake-News/master/images/best_result.png)
+
