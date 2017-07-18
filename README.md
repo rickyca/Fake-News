@@ -1,5 +1,4 @@
 ## Fake-News
-News detector
 
 ![alt text](https://raw.github.com/rickyca/Fake-News/master/images/wordclouds.png)
 
