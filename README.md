@@ -18,7 +18,7 @@ To obtain real news a few ‘trusted’ websites were selected. This was based o
 
 Data in this report are drawn from the first wave of the panel, conducted March 19-April 29, 2014 among 2,901 web respondents[...]”
 
-![alt text](https://raw.github.com/rickyca/Fake-News/master/images/trust levels.png)
+![alt text](https://raw.github.com/rickyca/Fake-News/master/images/trust_levels.png)
 
 Based on this study, the top seven ‘trusted’ sources by all ideological groups were selected: economist.com, bbc.com, npr.org, pbs.org, wsj.com, cbsnews.com, and nbcnews.com. Using a Raspberry PI, small single-board computer, news were pulled periodically every five hours for one month. This set of news was also obtained through the Webhose.io API, in order to keep the same source of information.
 
