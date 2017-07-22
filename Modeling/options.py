@@ -47,14 +47,14 @@ def get_option_params(n_preprocessing,n_method, n_dim_reduct=-1, n_ensemble=-1):
     '''
     preprocessing = [{
         'countvectorizer__stop_words' : ['english'],
-        'countvectorizer__ngram_range': [(j,i) for j in range(1,4) for i in range(j,3)]
+        'countvectorizer__ngram_range': [(1,1),(2,2)]#[(j,i) for j in range(1,4) for i in range(j,3)]
         }, {
-        'tfidfvectorizer__stop_words' : [None, 'english'],
-        'tfidfvectorizer__ngram_range': [(j,i) for j in range(1,4) for i in range(j,3)]
+        'tfidfvectorizer__stop_words' : ['english'],
+        'tfidfvectorizer__ngram_range': [(1,1),(2,2)]#[(j,i) for j in range(1,4) for i in range(j,3)]
         }]
 
     dim_reduct = [{
-        'truncatedsvd__n_components': range(30,100,30)
+        'truncatedsvd__n_components': range(60,100,30)
     }]
 
     method = [{
@@ -64,30 +64,30 @@ def get_option_params(n_preprocessing,n_method, n_dim_reduct=-1, n_ensemble=-1):
         'logisticregression__solver': ['liblinear'],
         'logisticregression__max_iter': [1000]
         }, {
-        'kneighborsclassifier__n_neighbors': range(3,40,2),
+        'kneighborsclassifier__n_neighbors': range(3,40,3),
         'kneighborsclassifier__weights': ['uniform', 'distance']
         }, {
         'decisiontreeclassifier__max_features': np.arange(0.3,0.8,0.1),
         'decisiontreeclassifier__min_samples_split': range(2,10),
         'decisiontreeclassifier__class_weight': [None, 'balanced']
         }, {
-        'svc__C': range(1,30,2),
+        'svc__C': range(1,30,5),
         'svc__kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
         'svc__class_weight': [None, 'balanced']
         }, {
-        'mlpclassifier__hidden_layer_sizes': [(i,) for i in range(5,300,50)],
-        'mlpclassifier__activation': ['identity', 'logistic', 'tanh', 'relu'],
-        'mlpclassifier__alpha': np.arange(0.0001, 0.01, 0.0009),
-        'mlpclassifier__learning_rate': ['constant', 'invscaling', 'adaptive']
+        'mlpclassifier__hidden_layer_sizes': [(i,) for i in range(105,300,50)],
+        'mlpclassifier__activation': ['logistic', 'tanh', 'relu'],
+        #'mlpclassifier__alpha': np.arange(0.0001, 0.01, 0.0009),
+        'mlpclassifier__learning_rate': ['adaptive']#['constant', 'invscaling', 'adaptive']
         }]
 
     ensemble = [{
-        'adaboostclassifier__base_estimator': [DecisionTreeClassifier(), LogisticRegression(), KNeighborsClassifier(), SVC(), MLPClassifier()],
-        'adaboostclassifier__n_estimators': range(5,200,30),
-        'adaboostclassifier__learning_rate': np.arange(0.6,1.0,0.1)
+        'adaboostclassifier__base_estimator': [DecisionTreeClassifier(min_samples_leaf=1 ,min_samples_split=8, max_features=0.4)],#, LogisticRegression(), KNeighborsClassifier(), SVC(), MLPClassifier()],
+        'adaboostclassifier__n_estimators': range(5,100,30),
+        'adaboostclassifier__learning_rate': np.arange(0.6,1.0,0.2)
         }, {
-        'baggingclassifier__base_estimator': [DecisionTreeClassifier(), LogisticRegression(), KNeighborsClassifier(), SVC(), MLPClassifier()],
-        'baggingclassifier__n_estimators': range(3,100,20),
+        'baggingclassifier__base_estimator': [DecisionTreeClassifier(min_samples_leaf=1 ,min_samples_split=8, max_features=0.4)],#, LogisticRegression(), KNeighborsClassifier(), SVC(), MLPClassifier()],
+        'baggingclassifier__n_estimators': range(3,34,10),
         'baggingclassifier__max_features': np.arange(0.6,1.0,0.2)
         }]
 
