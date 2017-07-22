@@ -4,7 +4,7 @@
 
 # Motivation 
 
-Considering how social media affects our daily lives and how information is spread across it, some companies such as Facebook have been working on filtering ‘fake’ news. It is a difficult task, considering that people’s point of view should be taken into account when deciding which news sources are trustworthy or not. Different groups of people with different backgrounds and beliefs may disagree on what news are real or fake.
+Considering how social media affects our daily lives and how information is spread across it, some companies such as Facebook have been working on filtering ‘fake’ news. It is a difficult task, considering that people’s point of view should be taken into account when deciding which news sources are trustworthy or not. Different groups of people with different backgrounds and beliefs may disagree on what news stories are real or fake.
 
 The goal of this project is to provide a model that can be trained according to a previous belief of what news are real or fake. I personally find it interesting when I read news from a different point of view, which focuses on different aspects of the same situation, disaster or event. 
 
