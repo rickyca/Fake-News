@@ -34,7 +34,7 @@ Each folder consists on a different part of the project.
    - model.py splits data into train/test, performs a grid search on the train data, using 3 folds. It test the model on the test data and saves the result in a .csv file.
    - options.py has the modeling options. Combinations of sklearn modeling objects and combination of parameters for the grid search
    - run_all.py runs all possible combination for the models and logs their success or failure.
- - Final Model: Has the best model and a flask-angular app. Feel free to run it and test my results! You can do it by excecuting the python file final_model.py
+ - Final Model: Has the best model and a flask-angular app. Feel free to run it and test my results! You can do it by excecuting the python file fake_news_app.py
 
 Next image shows possible combinations for modeling
 
