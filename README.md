@@ -46,7 +46,9 @@ For now, the best result was obtained by a Neural Network: MultiLayer Perceptron
 
 ![alt text](https://raw.github.com/rickyca/Fake-News/master/images/best_result.png)
 
-Finally, there is a Final Model folder containing files to host a website in heroku. For this model, the second best result (Logistic Regression) was used, simply because it would have a faster response. Check it out!
+# Website
+
+Finally, there is a Final Model folder containing files to host a website in heroku. For this model, the second best result (Logistic Regression) was used, simply because it has a faster response. Check it out!
 
 [Fake News Website](https://fake-news-d.herokuapp.com "Fake News")
 
